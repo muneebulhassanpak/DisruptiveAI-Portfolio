@@ -52,6 +52,7 @@ async function getMessage() {
         inputElement.value = "";
     } catch (error) {
         console.log(error);
+        alert("Error add api key")
     }
 }
 

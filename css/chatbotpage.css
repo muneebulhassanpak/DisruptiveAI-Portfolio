@@ -1,0 +1,48 @@
+.features-section {
+  padding: 2rem 1rem;
+}
+
+.feature-heading {
+  font-size: 1.2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.link:hover {
+  text-decoration: none;
+  color: black !important;
+}
+
+.changeColor {
+  border: 1px solid rgb(255, 255, 255) !important;
+}
+
+/* max-width: 300px; */
+.featureHeight {
+  height: 400px;
+  /* object-fit: contain; */
+}
+
+.roundness {
+  border-radius: 0.5rem;
+}
+
+.logoControl {
+  width: 50px;
+  height: auto;
+}
+.footer {
+  background-color: #3d1e8f;
+  color: white;
+}
+
+@media (width>576px) {
+  /* .featureHeight {
+    height: 400px;
+    width: 100%;
+    object-fit: contain;
+  } */
+}

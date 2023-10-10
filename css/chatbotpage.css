@@ -39,6 +39,15 @@
   color: white;
 }
 
+.linkToPlayStore,
+.linkToAppleStore {
+  width: 200px;
+  height: auto;
+}
+.linkToAppleStore {
+  margin-left: 1rem;
+}
+
 @media (width>576px) {
   /* .featureHeight {
     height: 400px;

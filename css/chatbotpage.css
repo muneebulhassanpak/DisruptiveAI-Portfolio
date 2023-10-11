@@ -1,3 +1,81 @@
+/* Heading text start alterations */
+.heading {
+  text-align: center;
+}
+
+.headingH1 {
+  font-size: 3rem;
+}
+
+.headingH2 {
+  font-size: 2rem;
+}
+
+.headingH3 {
+  font-size: 1.8rem;
+}
+
+.headingH4 {
+  font-size: 1.2rem;
+}
+/* Heading text alterations end here **********/
+
+/* Header Logo control  */
+.logoControl {
+  width: 50px;
+  height: auto;
+}
+/* Header Logo control  */
+
+.heroSection {
+  min-height: 100vh;
+}
+
+.headerBotImage {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mainSection {
+  min-height: 75vh;
+}
+
+.consistentHover {
+  animation: consistentFloat 2s infinite linear alternate;
+}
+
+@keyframes consistentFloat {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.botImage {
+  margin-top: 3rem;
+}
+
+.intro-section {
+  min-height: 70vh;
+  margin: 0rem auto;
+}
+
+.mainBanner {
+  max-width: 100%;
+  border-radius: 2rem;
+}
+
 .features-section {
   padding: 2rem 1rem;
 }
@@ -16,42 +94,136 @@
   color: black !important;
 }
 
-.changeColor {
-  border: 1px solid rgb(255, 255, 255) !important;
-}
-
-/* max-width: 300px; */
 .featureHeight {
   height: 400px;
-  /* object-fit: contain; */
+}
+
+.featuresBackground {
+}
+
+.screenshotSection {
+  background-color: #f1b3e9;
+}
+.screenshotSection > div {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .roundness {
   border-radius: 0.5rem;
 }
 
-.logoControl {
-  width: 50px;
-  height: auto;
-}
 .footer {
   background-color: #3d1e8f;
   color: white;
 }
 
+.downloadWays {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkToDownload {
+  display: block;
+  width: 250px;
+}
+
 .linkToPlayStore,
 .linkToAppleStore {
-  width: 200px;
-  height: auto;
+  max-width: 100%;
+  cursor: pointer;
+  border-radius: 0.8rem;
 }
+
 .linkToAppleStore {
-  margin-left: 1rem;
+  margin-left: 0rem;
+  margin-top: 0.5rem;
+}
+
+.linkToPlayStore:hover,
+.linkToAppleStore:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transform: translateY(-1px);
+  transition: 0.2s ease;
+}
+
+.customHoverEffect {
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.customHoverEffect:hover {
+  border: 2px solid #3d1e8f;
+  border-radius: 0rem;
+  background-color: #3d1e8f;
+  transition: 0.2s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  color: white;
+  z-index: 55;
+}
+
+/* Video section css  */
+.videoSection {
+  /* background-color: #7a1fc2; */
+  background-color: #d4a4fc;
+  color: white;
+}
+.videoSection > div {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* Video section css  */
+
+.burgerIcon {
+  color: white;
 }
 
 @media (width>576px) {
-  /* .featureHeight {
-    height: 400px;
-    width: 100%;
-    object-fit: contain;
-  } */
+  .customHoverEffect {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .customHoverEffect:hover {
+    transform: scale(1.1);
+  }
+  .heading {
+    text-align: left;
+  }
+  .headingH1 {
+    font-size: 4.5rem;
+  }
+  .headingH2 {
+    font-size: 3rem;
+  }
+
+  .headingH3 {
+    font-size: 2.5rem;
+  }
+
+  .headingH4 {
+    font-size: 2rem;
+  }
+
+  .botImage {
+    margin-top: 5rem;
+  }
+
+  .linkToPlayStore,
+  .linkToAppleStore {
+    width: 200px;
+    height: auto;
+  }
+  .linkToAppleStore {
+    margin-left: 1rem;
+    margin-top: 0rem;
+  }
+  .downloadWays {
+    flex-direction: row;
+    max-width: 420px;
+  }
 }
